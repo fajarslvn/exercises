@@ -1,0 +1,2 @@
+# exercises
+Personal Coding Exercises
