@@ -8,3 +8,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+// https://opentdb.com/api.php?amount=10&type=multiple
