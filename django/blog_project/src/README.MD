@@ -37,14 +37,19 @@ INSTALLED_APPS = [
 8. Run the server `python3 manage.py runserver`
 9. Open admin page by access it on localhost:8000/admin
 10. Add Module model to admin page -> module > admin.py (Set 2)
-11. Add code -> posts > views.py (Set 3)
+11. Add code -> module > views.py (Set 3)
 ```
+from .models import Post
+
 def post_list(request):
-    context = {}
+    posts = Post.objects.all()
+    context = {
+      'posts_list': posts,
+    }
     return render(request, 'post_list.html', context)
 ```
-12. Add path for post_list view -> tutorial > urls.py (Set 4)
-13. Create file and function -> posts > urls.py (Set 4)
+12. Add path for view post_list -> app > urls.py (Set 4)
+13. Create file and function -> app > urls.py (Set 4)
 14. Create folder and html file in posts > templates (new) > posts (new) > post_list.html (New and add simple html)
 15. Update the path on posts > views.py (Set 4) -> `posts/post_list.html`
 16. Create the context from the models/database (Set 5)
