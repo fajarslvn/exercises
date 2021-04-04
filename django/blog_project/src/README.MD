@@ -6,7 +6,7 @@
 4. Install django -> `pip3 install django`
 5. Create a project -> `django-admin startproject proj'
 6. Rename "proj" folder (root) to "src"
-7. cd to src folder > settings.py
+7. cd to src folder > proj > settings.py
 8. Set -> ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 9. and hide SECRET_KEY in sk.txt and place it in "src"-> 
 ```
