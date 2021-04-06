@@ -4,4 +4,5 @@
 2. Build project `django-admin startproject blog .`
 3. Setup `settings.py` (installed apps, host, secret key)
 4. Make app `python3 manage.py startapp blog`
-5. 
+5. Setup Django rest framework -> https://www.django-rest-framework.org or https://www.django-rest-framework.org/tutorial/quickstart
+6. 
